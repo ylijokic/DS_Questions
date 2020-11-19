@@ -1,5 +1,6 @@
-
-# Data Science Internship Questions
+## Data Science Internship Questions
+---
+## Charlie Ylijoki
 
 This repository contains answers to the Data Science Internship take home assessment.
 

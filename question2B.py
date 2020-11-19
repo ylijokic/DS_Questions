@@ -1,4 +1,6 @@
 import pandas as pd
+import matplotlib.pyplot as plt
+
 df = pd.read_csv('./data.csv', names=['index', 'value'])
 
 mean = df['value'].mean()
@@ -16,4 +18,16 @@ print(median)
 std = df['value'].std()
 print(std)
 
-print(df.head())
+print('---------------------------')
+
+print(df['value'].describe())
+
+print('---------------------------')
+
+df.plot(x = 'index', y = 'value', kind = 'hist')
+plt.show()
+
+print('---------------------------')
+
+
+
