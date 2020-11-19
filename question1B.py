@@ -13,7 +13,7 @@ def change_names(data_frame):
     for index in new_df.index:
         name = new_df['Student_Name'][index]
         
-        # Conditional to make manipulate name
+        # Conditional to make name upper/lower case
         if ('e' in name or 'E' in name):
             new_df['Student_Name'][index] = name.upper()
         else:
@@ -24,6 +24,6 @@ def change_names(data_frame):
 
 df3 = change_names(df1)
 
-for index in df3.index:
-    print(df3['Student_Name'][index])
+# for index in df3.index:
+#     print(df3['Student_Name'][index])
 
